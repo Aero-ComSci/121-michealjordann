@@ -28,6 +28,7 @@ def spot_clicked(x, y):
     t.stamp()
     color = ["red","blue", "green", "orange", "purple","brown","yellow"]
     shape = ["turtle","classic","triangle","square"]
+    t.shapesize(rand.randint(1,8))
     t.color(rand.choice(color))
     t.shape(rand.choice(shape))
     change_position()
