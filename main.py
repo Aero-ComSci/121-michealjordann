@@ -25,16 +25,24 @@ scwriter.speed(0)
 t.speed(0)
 #-----game functions--------
 def spot_clicked(x, y):
+    t.stamp()
+    color = ["red","blue", "green", "orange", "purple","brown","yellow"]
+    shape = ["turtle","classic","triangle","square"]
+    t.color(rand.choice(color))
+    t.shape(rand.choice(shape))
     change_position()
     counterpos()
+   
 
 
 def change_position():
+    
     xnew = rand.randint(-360,260)
     ynew = rand.randint(-360,260)
     t.penup()
     t.goto(xnew,ynew)
     update_score()
+    
 
 def update_score():
     global score
