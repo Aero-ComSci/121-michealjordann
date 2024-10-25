@@ -25,8 +25,11 @@ counter.speed(0)
 scwriter.speed(0)
 t.speed(0)
 #-----game functions--------
-
-
+def startgame():
+   yn = input("type yes to play ")
+   if yn != 'yes':
+      t.hideturtle()
+startgame()
 
 def spot_clicked(x, y):
     t.stamp()
